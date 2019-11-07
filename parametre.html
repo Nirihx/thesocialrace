@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="header">
+                <!-- en desktop menu -->
+                <nav class="desktop navbar navbar-expand-sm bg-primary navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="#theSosialRice"></a>
+                        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="trais"></span>
+                            <span class="trais"></span>
+                            <span class="trais"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="my-nav">
+
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        ESPACE ANNONCEURS
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Link 1</a>
+                                        <a class="dropdown-item" href="#">Link 2</a>
+                                        <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        MGA
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">MGA</a>
+                                        <a class="dropdown-item" href="#">EURO</a>
+                                        <a class="dropdown-item" href="#">USD</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-user-circle-o"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- end container -->
+                </nav><!-- en desktop menu -->
+                <!-- mobile menu -->
+                <div class="barMenuMobile">
+                    <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="#theSosialRice"></a>
+                    <nav id="main-nav" class="mobile menu">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li>
+                                <a href="#">ESPACE ANNONCEURS</a>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="#">Link 3</a></li>  
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">MGA</a>
+                                <ul>
+                                    <li><a href="#">MGA</a></li>
+                                    <li><a href="#">EURO</a></li>
+                                    <li><a href="#">USD</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-user-circle-o"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end mobile menu -->
+                <article class="contentInfo" id="contentInfo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-4">
+                                <div class="avatar">
+                                    <img src="assets/avatar1.png" alt="">
+                                    <a href="#" class="cat"><i class="fa fa-cog"></i></a>
+                                    <p class="sttr"><img src="assets/beret.png" alt=""> Annonceur</p>
+                                </div>
+                            </div>
+                            <div class="col-md-11 col-10 info">
+                                <p class="name">Jean-Baptiste GIROGUY</p>
+                                <p class="inf">jean-baptisteGIROGUY@social.com</p>
+                                <p class="inf">Adress : <span class="add">update</span></p> <p class="sttr"><img src="assets/beret.png" alt=""> Annonceur</p>                               
+                                <div class="edit col-14"><a href="#"><i class="fa fa-pencil"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </header><!-- end header -->
+
+            <section class="section marque">
+                <div class="container">
+                    <div class="row">
+                        <aside class="sidebar">
+                            <div class="col-14"><h2 class="sttr">My campaigns</h2></div>
+                            <div class="myCamp row">
+                                <div class="item col-5 col-md-7">
+                                    <img src="assets/camp1.jpg" alt="">
+                                </div>
+                                <div class="item col-5 col-md-7">
+                                    <img src="assets/camp2.jpg" alt="">
+                                </div>
+                                <div class="item col-5 col-md-7">
+                                    <img src="assets/camp4.jpg" alt="">
+                                </div>
+                                <div class="item col-5 col-md-7">
+                                    <img src="assets/camp3.jpg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="link">See more</a>
+                            <div class="row">
+                                <div class="col-14">
+                                    <h3 class="sttr mt-3">Payement</h3>
+                                </div>
+                                <div class="pay col-14">
+                                    <a href="" class="paypal">
+                                        <img src="assets/paypal.png" alt="Paypal">
+                                    </a>
+                                    <a href="" class="mvola">
+                                        <img src="assets/telma.png" alt="M Vola">
+                                    </a>
+                                    <a href="" class="orangeM">
+                                        <img src="assets/orangeM.png" alt="Orange Money">
+                                    </a>
+                                </div>
+
+                                <div class="col-14"><h2 class="sttr">My campaigns</h2></div>
+                                <div class="col-14">
+                                    <div class="itemClassement">
+                                        <div class="pic"><img src="assets/camp1.jpg" alt=""></div>
+                                        <div class="resum">
+                                            <p class="para">Cal_Christophe</p>
+                                            <p class="para">1 372 000, 00 MGA</p>
+                                        </div>
+                                        <div class="rang"><p class="para">01</p></div>
+                                    </div><!-- end itemClassement -->
+                                    <div class="itemClassement">
+                                        <div class="pic"><img src="assets/camp2.jpg" alt=""></div>
+                                        <div class="resum">
+                                            <p class="para">Cal_Christophe</p>
+                                            <p class="para">1 372 000, 00 MGA</p>
+                                        </div>
+                                        <div class="rang"><p class="para">02</p></div>
+                                    </div><!-- end itemClassement -->
+                                    <div class="itemClassement">
+                                        <div class="pic"><img src="assets/camp1.jpg" alt=""></div>
+                                        <div class="resum">
+                                            <p class="para">Cal_Christophe</p>
+                                            <p class="para">1 372 000, 00 MGA</p>
+                                        </div>
+                                        <div class="rang"><p class="para">03</p></div>
+                                    </div><!-- end itemClassement -->
+                                    <div class="col-14 text-center">
+                                        <p class="link">...</p>
+                                    </div>
+                                    <div class="itemClassement">
+                                        <div class="pic"><img src="assets/camp2.jpg" alt=""></div>
+                                        <div class="resum">
+                                            <p class="para">Cal_Christophe</p>
+                                            <p class="para">1 372 000, 00 MGA</p>
+                                        </div>
+                                        <div class="rang"><p class="para">24</p></div>
+                                    </div><!-- end itemClassement -->
+                                    <div class="itemClassement">
+                                        <div class="pic"><img src="assets/camp3.jpg" alt=""></div>
+                                        <div class="resum">
+                                            <p class="para">Cal_Christophe</p>
+                                            <p class="para">1 372 000, 00 MGA</p>
+                                        </div>
+                                        <div class="rang"><p class="para">25</p></div>
+                                    </div><!-- end itemClassement -->
+                                    <div class="itemClassement">
+                                        <div class="pic"><img src="assets/camp1.jpg" alt=""></div>
+                                        <div class="resum">
+                                            <p class="para">Cal_Christophe</p>
+                                            <p class="para">1 372 000, 00 MGA</p>
+                                        </div>
+                                        <div class="rang"><p class="para">26</p></div>
+                                    </div><!-- end itemClassement -->
+                                    <div class="col-14 text-center">
+                                        <p class="link">...</p>
+                                    </div>
+                                    <div class="more">
+                                        <a href="#" class="link">See more</a>
+                                        <span class="link">39 Totals</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <article class="article">
+                            <h1 class="ttr">Parametres</h1>
+                            <hr class="separat">
+                            <div class="etape">
+                                <div class="row">
+                                    <div class="contentForm parametre">
+                                        <form action="">
+                                            <div class="col-md-14">
+                                                <p class="para">Pensez à enregistrer vos modifications en bas une fois celles-ci</p>
+
+                                                <h6 class="ttr">Mes informations personnelles</h6>
+
+                                                <div class="">
+                                                    <label class="label" for="">Pseudo</label>
+                                                    <input class="form-control" type="text">
+                                                    
+                                                    <label class="label" for="">Email de référence</label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Email de correspondance <i class="iconeDark">i</i></label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Date de naissance <i class="iconeDark">i</i></label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Adresse</label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Code postal</label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Ville</label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Pays</label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Téléphone</label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Copier-coller ici le lien URL de votre profil Facebook ( nécessaire pour comptabiliser vos gains) <i class="iconeDark">i</i></label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Copier-coller ici le lien URL de votre profil Instagram ( nécessaire pour comptabiliser vos gains) <i class="iconeDark">i</i></label>
+                                                    <input class="form-control" type="text">
+    
+                                                    <label class="label" for="">Copier-coller ici le lien URL de votre profil Tiktok ( nécessaire pour comptabiliser vos gains) <i class="iconeDark">i</i></label>
+                                                    <input class="form-control" type="text">
+                                                </div>
+
+                                                <h6 class="ttr">Mes informations de ciblage (nécessaires pour pouvoir participer aux campagnes) <i class="icone">!</i></h6>
+                                                <p class="para">Mes intérêts</p>
+                                                <div class="row">
+                                                    <div class="col-md-10 interet">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="1">
+                                                            <label class="custom-control-label" for="1">Sport</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="2">
+                                                            <label class="custom-control-label" for="2">Mode</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="3">
+                                                            <label class="custom-control-label" for="3">Buseness</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="4">
+                                                            <label class="custom-control-label" for="4">Voyage</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="5">
+                                                            <label class="custom-control-label" for="5">Culture/Bien-être</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="6">
+                                                            <label class="custom-control-label" for="6">Cuisine/Santé</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="7">
+                                                            <label class="custom-control-label" for="7">Maison/Déco</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="8">
+                                                            <label class="custom-control-label" for="8">Autre</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <h6 class="ttr">Mes informations nécessaires pour recevoir le paiement de mes gains</h6>
+                                                <p class="para">Charger ma pièce d’identité : carte d’identité, passeport (permis de conduire,  carte  d’étudiant,  carte Vitale ou autre non acceptées)</p>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="apercu">
+                                                            <img src="assets/picUp.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                            <label class="label" for="ttrCamp">Logo de la campagne</label>
+                                                            <div class="input-group row">
+                                                                <div class="col-md-4">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                                                                        <label class="btn btn-primary custom-file-label" for="inputGroupFile04">FICHIER</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fileName col-md-5">
+                                                                    <input class="form-control" type="text" id="fileName" placeholder="Nom du fichier">
+                                                                </div>
+            
+                                                            </div>
+                                                            <p class="para">Format acceptés : jpg, jpeg, png, pdf</p>
+                                                        </div>
+                                                </div>
+
+                                                <h6 class="ttr">Payement</h6>
+                                                <div class="">
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"><img src="assets/paypal.png" alt=""></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"><img src="assets/mvola.jpg" alt=""></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"><img src="assets/orangeM.png" alt=""></a>
+                                                        </li>
+                                                    </ul><!-- end nav-tabs -->
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                                            <p>First Panel</p>
+                                                        </div>
+                                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                                            <label class="label" for="">Numéro Mvola </label>
+                                                            <input class="form-control" type="text">
+                                                        </div>
+                                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                                            <label class="label" for="">Numéro Orange money</label>
+                                                            <input class="form-control" type="text">
+                                                        </div>
+                                                    </div><!-- end tab-content -->
+                                                </div>
+                                                <hr class="separateC"></hr>
+                                                <div class="row">
+                                                    <div class="col-14">
+                                                        <a href="#" class="link">Conditions général d'utilisation <i class="iconeDark">!</i></a>
+                                                    </div>
+                                                    <div class="col-14 mb-5 mt-3">
+                                                        <a href="#" class="btn btn-primary">Enregistrer</a>
+                                                    </div>
+                                                    <div class="col-14">
+                                                        <a href="#" class="btn btn-primary">Activer le versement de mes gains</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>    
+                                            
+                                        </form>
+                                    </div><!-- end contentForm -->
+                                </div><!-- end row -->
+                            </div><!-- end etape -->
+                        </article><!-- end article -->
+                    </div>
+                </div>
+            </section><!-- end section -->
+
+            <footer class="footer">
+                <hr class="separat">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="copyRight">&copy; 2019 : #thesocialrace.com <a href="#" class="link">Condition générales d'utilisation</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer><!-- end footer -->
+        </div><!-- end row -->
+    </div><!-- end container-fluid -->
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/hc-offcanvas-nav.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
