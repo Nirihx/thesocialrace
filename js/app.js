@@ -63,5 +63,9 @@
         insertClose: false,
         labelBack: 'Back' // back buton
     });
+    
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
 
 })(jQuery);
