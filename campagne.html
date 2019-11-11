@@ -7,8 +7,10 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="css/slick.min.css">
-    <link rel="stylesheet" href="css/slick-theme.min.css">
+    <!-- <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -112,39 +114,43 @@
                 <div class="container">
                     <div class="row">
                         <aside class="sidebar">
-                            <div class="myCamp row">
+                            <div class="sticky">
                                 <div class="col-14"><h2 class="sttr">My campaigns</h2></div>
-                                <div class="item col-md-7">
-                                    <img src="assets/camp1.jpg" alt="">
+                                <div class="myCamp row">
+                                    <div class="item col-md-7">
+                                        <img src="assets/camp1.jpg" alt="">
+                                    </div>
+                                    <div class="item col-md-7">
+                                        <img src="assets/camp2.jpg" alt="">
+                                    </div>
+                                    <div class="item col-md-7">
+                                        <img src="assets/camp4.jpg" alt="">
+                                    </div>
+                                    <div class="item col-md-7">
+                                        <img src="assets/camp3.jpg" alt="">
+                                    </div>
                                 </div>
-                                <div class="item col-md-7">
-                                    <img src="assets/camp2.jpg" alt="">
-                                </div>
-                                <div class="item col-md-7">
-                                    <img src="assets/camp4.jpg" alt="">
-                                </div>
-                                <div class="item col-md-7">
-                                    <img src="assets/camp3.jpg" alt="">
+                                <a href="#" class="link">See more</a>
+                                <div class="row">
+                                    <div class="col-14">
+                                        <h3 class="sttr mt-3">Payement</h3>
+                                    </div>
+                                    <div class="pay col-14">
+                                        <a href="" class="paypal">
+                                            <img src="assets/paypal.png" alt="Paypal">
+                                        </a>
+                                        <a href="" class="mvola">
+                                            <img src="assets/telma.png" alt="M Vola">
+                                        </a>
+                                        <a href="" class="orangeM">
+                                            <img src="assets/orangeM.png" alt="Orange Money">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <a href="#" class="link">See more</a>
-                            <div class="row">
-                                <div class="col-14">
-                                    <h3 class="sttr mt-3">Payement</h3>
-                                </div>
-                                <div class="pay col-14">
-                                    <a href="" class="paypal">
-                                        <img src="assets/paypal.png" alt="Paypal">
-                                    </a>
-                                    <a href="" class="mvola">
-                                        <img src="assets/telma.png" alt="M Vola">
-                                    </a>
-                                    <a href="" class="orangeM">
-                                        <img src="assets/orangeM.png" alt="Orange Money">
-                                    </a>
-                                </div>
 
-                                <div class="col-14"><h2 class="sttr">My campaigns</h2></div>
+                            <div class="row">
+                                <div class="col-14"><h2 class="sttr">Classement</h2></div>
                                 <div class="col-14">
                                     <div class="itemClassement">
                                         <div class="pic"><img src="assets/camp1.jpg" alt=""></div>
@@ -212,7 +218,8 @@
                             <hr class="separat">
                             <div class="etape">
                                 <div class="row">
-                                    <div class="col-14">
+                                    <div class="col-14 slideMobile">
+                                        <!-- item -->
                                         <div class="jumb">
                                             <div class="pic col-md-4">
                                                 <img src="assets/picCamp1.jpg" alt="">
@@ -242,9 +249,39 @@
                                                     <a href="#" class="btn btn-primary">I want to participate</a>
                                                 </div>
                                             </div>
-                                        </div><!-- end jumb --> 
-                                        <a href="#" class="link">See more</a>
+                                        </div><!-- end item jumb --> 
+                                        <div class="jumb">
+                                            <div class="pic col-md-4">
+                                                <img src="assets/picCamp1.jpg" alt="">
+                                            </div>
+                                            <div class="col-md-5 infs">
+                                                <h4 class="ttr">Cahiers Calligraphe - Rentrée des Classes 2019</h4>
+                                                <p class="para">Campaign launching date : 23/08/2019</p>
+                                                <p class="disp">CAMPAGNE EN COURS</p>
+                                                <p class="para">Pays <img src="assets/flagMg.png" alt=""></p>
+                                            </div>
+                                            <div class="col-md-5 contentTable">
+                                                <table class="table">
+                                                    <tr>
+                                                        <td>Amount :</td>
+                                                        <td>750 000, 00 MGA</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Already earned :</td>
+                                                        <td>108 400,00 MGA</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Remains to earn :</td>
+                                                        <td>641 600,00 MGA</td>
+                                                    </tr>
+                                                </table>
+                                                <div class="text-center">
+                                                    <a href="#" class="btn btn-primary">I want to participate</a>
+                                                </div>
+                                            </div>
+                                        </div><!-- end item jumb -->
                                     </div>
+                                    <div class="col-14"><a href="#" class="link">See more</a></div>
                                     <hr class="separatC">
                                     <div class="col-14 collapsible">
                                         <div class="item">
@@ -265,7 +302,7 @@
                                         </div><!-- end item -->
                                         <div class="item">
                                             <button class="collapseBtn" type="button" data-toggle="collapse" data-target="#c3" aria-expanded="false" aria-controls="c3">
-                                                Tags et comptes à identifier (sinon, votre post ne sera pas valide)
+                                                Tags et comptes à identifier <span class="moreTxt">(sinon, votre post ne sera pas valide)</span>
                                             </button>
                                             <div class="collapse" id="c3">
                                                 <p class="para">#Calligraphe #Cahier #thesocialrace</p>
@@ -289,7 +326,7 @@
                                         </div><!-- end item -->
                                         <div class="item">
                                             <button class="collapseBtn" type="button" data-toggle="collapse" data-target="#c6" aria-expanded="false" aria-controls="c6">
-                                                Critères appréciés des ambassadeurs pour participer à cette campagne 
+                                                Critères appréciés <span class="moreTxt">des ambassadeurs pour participer à cette campagne </span>
                                             </button>
                                             <div class="collapse" id="c6">
                                                 <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo inventore molestiae odit non modi repellendus nisi tempore aliquam autem ratione!</p>
@@ -297,7 +334,7 @@
                                         </div><!-- end item -->
                                         <div class="item">
                                             <button class="collapseBtn" type="button" data-toggle="collapse" data-target="#c7" aria-expanded="false" aria-controls="c7">
-                                                Taille appréciée de la communauté des ambassadeurs pour cette campagne : nombre de followers
+                                                Taille appréciée <span class="moreTxt"> de la communauté des ambassadeurs pour cette campagne : nombre de followers</span>
                                             </button>
                                             <div class="collapse" id="c7">
                                                 <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo inventore molestiae odit non modi repellendus nisi tempore aliquam autem ratione!</p>
@@ -329,7 +366,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="dashbord">
+                                                <div class="dashbord desktop">
                                                     <div class="ttr d-flex">
                                                         <h6 class="tt">dashboard de la campagne
                                                         </h6>
@@ -441,7 +478,218 @@
                                                             </div>
                                                         </div><!-- end footerTable -->
                                                     </div><!-- end table-responsive -->
-                                                </div><!-- end dashbord -->
+                                                </div><!-- end dashbord desktop -->
+                                                <div class="dashbord mobile d-block d-md-none">
+                                                    <div class="ttr d-flex">
+                                                        <h6 class="tt">dashboard de la campagne
+                                                        </h6>
+                                                        <button type="button" class="link" data-toggle="modal" data-target="#searchModal">
+                                                            <img src="assets/search.png" alt="">
+                                                        </button>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <!-- modale search -->
+                                                        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-body">
+                                                                        <input type="text" class="form-control" placeholder="search">
+                                                                        <button type="submit" data-dismiss="modal" class="m-auto btn btn-primary">OK</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end modale search -->
+                                                        <!--  commentModal -->
+                                                        <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog" role="document">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-body">
+                                                                            <p class="para">Aucun commentaire enregistrer</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end commentModal -->
+                                                        <div class="bodyTable">
+                                                            <div class="item d-flex">
+                                                                <div class="lc">
+                                                                    <div class="nCom">
+                                                                        <p class="badge badge-primary">150</p>
+                                                                    </div>
+                                                                    <div class="cc">
+                                                                        <p class="name">VOLASOA Elisa</p>
+                                                                        <p class="price">800,00 MGA</p>
+                                                                        <div>
+                                                                            <img src="assets/icon-fb.png" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="para">
+                                                                                <img src="assets/icone2.png" alt=""> <span class="small">54</span>
+                                                                                <img src="assets/icone3.png" alt=""> <span class="small">108</span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="date">04-09-2019</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rc">
+                                                                    <div class="starC">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star not"></i>
+                                                                    </div>
+                                                                    <a href="#" data-toggle="modal" data-target="#commentModal" class="btn btn-primary">Comments</a>
+                                                                    <a href="#" class="btn btn-blue">Post's link</a>
+                                                                    <a href="#" class="btn btn-success">Validé</a>
+        
+                                                                </div>
+                                                            </div>
+                                                            <!-- end item -->
+                                                            <div class="item d-flex">
+                                                                <div class="lc">
+                                                                    <div class="nCom">
+                                                                        <p class="badge badge-primary">150</p>
+                                                                    </div>
+                                                                    <div class="cc">
+                                                                        <p class="name">VOLASOA Elisa</p>
+                                                                        <p class="price">800,00 MGA</p>
+                                                                        <div>
+                                                                            <img src="assets/icon-fb.png" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="para">
+                                                                                <img src="assets/icone2.png" alt=""> <span class="small">54</span>
+                                                                                <img src="assets/icone3.png" alt=""> <span class="small">108</span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="date">04-09-2019</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rc">
+                                                                    <div class="starC">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star not"></i>
+                                                                    </div>
+                                                                    <a href="#" data-toggle="modal" data-target="#commentModal" class="btn btn-primary">Comments</a>
+                                                                    <a href="#" class="btn btn-blue">Post's link</a>
+                                                                    <a href="#" class="btn btn-success">Validé</a>
+        
+                                                                </div>
+                                                            </div>
+                                                            <!-- end item -->
+                                                            <div class="item d-flex">
+                                                                <div class="lc">
+                                                                    <div class="nCom">
+                                                                        <p class="badge badge-primary"></p>
+                                                                    </div>
+                                                                    <div class="cc">
+                                                                        <p class="name">VOLASOA Elisa</p>
+                                                                        <p class="price">800,00 MGA</p>
+                                                                        <div>
+                                                                            <img src="assets/icon-fb.png" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="para">
+                                                                                <img src="assets/icone2.png" alt=""> <span class="small">54</span>
+                                                                                <img src="assets/icone3.png" alt=""> <span class="small">108</span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="date">04-09-2019</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rc">
+                                                                    <div class="starC">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star not"></i>
+                                                                    </div>
+                                                                    <a href="#" data-toggle="modal" data-target="#commentModal" class="btn btn-primary">Comments</a>
+                                                                    <a href="#" class="btn btn-blue">Post's link</a>
+                                                                    <a href="#" class="btn btn-success">Validé</a>
+        
+                                                                </div>
+                                                            </div>
+                                                            <!-- end item -->
+                                                            <div class="item d-flex">
+                                                                <div class="lc">
+                                                                    <div class="nCom">
+                                                                        <p class="badge badge-primary">150</p>
+                                                                    </div>
+                                                                    <div class="cc">
+                                                                        <p class="name">VOLASOA Elisa</p>
+                                                                        <p class="price">800,00 MGA</p>
+                                                                        <div>
+                                                                            <img src="assets/icon-fb.png" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="para">
+                                                                                <img src="assets/icone2.png" alt=""> <span class="small">54</span>
+                                                                                <img src="assets/icone3.png" alt=""> <span class="small">108</span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="date">04-09-2019</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rc">
+                                                                    <div class="starC">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star not"></i>
+                                                                    </div>
+                                                                    <a href="#" data-toggle="modal" data-target="#commentModal" class="btn btn-primary">Comments</a>
+                                                                    <a href="#" class="btn btn-blue">Post's link</a>
+                                                                    <a href="#" class="btn btn-success">Validé</a>
+        
+                                                                </div>
+                                                            </div>
+                                                            <!-- end item -->
+                                                            <div class="item d-flex">
+                                                                <div class="lc">
+                                                                    <div class="nCom">
+                                                                        <p class="badge badge-primary"></p>
+                                                                    </div>
+                                                                    <div class="cc">
+                                                                        <p class="name">VOLASOA Elisa</p>
+                                                                        <p class="price">800,00 MGA</p>
+                                                                        <div>
+                                                                            <img src="assets/icon-fb.png" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <p class="para">
+                                                                                <img src="assets/icone2.png" alt=""> <span class="small">54</span>
+                                                                                <img src="assets/icone3.png" alt=""> <span class="small">108</span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="date">04-09-2019</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rc">
+                                                                    <div class="starC">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star not"></i>
+                                                                    </div>
+                                                                    <a href="#" class="btn btn-blue">Post's link</a>
+                                                                    <a href="#" class="btn btn-success">Validé</a>
+        
+                                                                </div>
+                                                            </div>
+                                                            <!-- end item -->
+                                                        </div>
+                                                        <div class="footerTable">
+                                                            <div class="pagination">
+                                                                <a href="#" class="link"><i class="fa fa-angle-left"></i></a>
+                                                                <p class="para">...</p>
+                                                                <p class="para">21</p>
+                                                                <p class="para active">22</p>
+                                                                <p class="para">23</p>
+                                                                <p class="para">...</p>
+                                                                <a href="#" class="link"><i class="fa fa-angle-right"></i></a>
+                                                            </div>
+                                                        </div><!-- end footerTable -->
+                                                    </div><!-- end table-responsive -->
+                                                </div><!-- end dashbord mobile -->
                                                 
                                                 <h6 class="ttr">Ajoutez votre post</h6>
                                                 <div class="rs"> 
@@ -511,7 +759,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/hc-offcanvas-nav.js"></script>
-    <script src="js/slick.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

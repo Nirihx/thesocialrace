@@ -18,20 +18,42 @@
         toggleActive: true
     });
     
-    // slide sidebar
     var widthScreen = $( window ).width();
-    $( window ).resize(function() {
-        if(widthScreen < 768){
-            $('.myCamp').addClass('slick-track') 
-        } else{
-            $('.myCamp').removeClass('slick-track')
-        }
-    });
+    // sticky sidebar
+    if(widthScreen > 768){
+        $(document).on("scroll", function(){
+            if($(document).scrollTop() > 180){
+                $(".sidebar .sticky").addClass("sticky-top");
+            }else{
+                $(".sidebar .sticky").removeClass("sticky-top");
+            }
+        });
+    }
+    // Check if Navigator is Internet Explorer
+    // if(navigator.userAgent.indexOf('MSIE')!==-1
+    // || navigator.appVersion.indexOf('Trident/') > -1){
+    //     // Scroll event check
+    //     $(window).scroll(function (event) {
+    //         var scroll = $(window).scrollTop();
+
+    //         // Activate sticky for IE if scrolltop is more than 20px
+    //         if ( scroll > 20) {
+    //             $('.sidebar .sticky').addClass( "sticky-top-ie" );
+    //         }else{
+    //             $('.sidebar .sticky').removeClass( "sticky-top-ie" );        
+    //         }
+    //     });
+    // }
+    
+    // slide sidebar
     if(widthScreen < 768){
-       $('.myCamp').addClass('slick-track') 
+        $('.myCamp').addClass('slick-track') 
+        $('.slideMobile').addClass('slick-track') 
     } else{
         $('.myCamp').removeClass('slick-track')
+        $('.slideMobile').removeClass('slick-track') 
     }
+
     $('.sidebar .slick-track').slick({
         responsive: [
           {
@@ -52,6 +74,34 @@
               centerMode: true,
               centerPadding: '40px',
               slidesToShow: 2,
+              slidesToScroll: 1,
+              dots: false
+            }
+          }
+        ]
+    });
+
+    $('.slideMobile.slick-track').slick({
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '0',
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '0',
+              slidesToShow: 1,
               slidesToScroll: 1,
               dots: false
             }

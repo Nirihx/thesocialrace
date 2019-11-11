@@ -8,11 +8,13 @@
     }
 }
 body{
-    background: #f5f6f7;
+    // background: #f5f6f7;
     font-family: $font;
-    min-height: 1024px;
     a:hover{
         text-decoration: none;
+    }
+    .modal-backdrop.show{
+        opacity: .1;
     }
 }
 
@@ -328,7 +330,7 @@ body{
         padding-top: 45px;
     }
     .sidebar{
-        margin-top: 70px;
+        margin-top: 65px;
         margin-bottom: 20px;
         @include make-col-ready();
         @include media-breakpoint-down(md) {
@@ -338,6 +340,23 @@ body{
         @include media-breakpoint-up(xs) {
             @include make-col(3);
         }
+        .sticky-top{
+            position: fixed;
+            position: sticky;
+            background: #FFF;
+            padding: 0 10px 20px 5px;
+            z-index: 99;
+            margin-left: -10px;
+            margin-right: -10px; 
+            &.sticky{
+                top: 161px;
+                padding-top: 30px;   
+                    width: 260px;
+            }
+        }
+        // .sticky-top-ie{
+        //     position:fixed;
+        // } 
         .sttr{
             text-transform: uppercase;
         }
@@ -367,6 +386,16 @@ body{
             align-items: center;
             flex-direction: row;
             margin-bottom: 20px;
+            a{
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-left: -5px;
+                margin-right: -5px;
+                display: block;
+                img{
+                    width: 90%;
+                }
+            }
             a:hover{
                 transition: all .3s ease-in-out;
                 opacity: .7;
@@ -458,6 +487,28 @@ body{
             font-size: 13px;
             display: inline-block;
         }
+        .slideMobile{            
+            .slick-prev{
+                left: 0;
+                z-index: 99;
+                &:before{
+                    content:"\f104";
+                    font-family: "fontawesome";
+                    color: #cecdcd;
+                    font-size: 4.5rem;
+                }
+            }
+            .slick-next{
+                right: 5px;
+                z-index: 99;
+                &:before{
+                    content:"\f105";
+                    font-family: "fontawesome";
+                    color: #cecdcd;
+                    font-size: 4.5rem;
+                }
+            }
+        }
         .jumb{
             width: 100%;
             display: flex;
@@ -469,6 +520,10 @@ body{
             overflow: hidden;
             margin-top: 30px;
             margin-bottom: 10px;
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+                padding-bottom: 10px;
+            }
             .ttr{
                 font-size: 16px;
                 font-weight: 700;
@@ -477,6 +532,14 @@ body{
             }
             .pic{
                 margin-left: -15px;
+                @include media-breakpoint-down(md) {
+                    margin-left: 0;
+                    padding: 0;
+                    img{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                }
             }
             .disp{
                 text-transform: uppercase;
@@ -492,6 +555,9 @@ body{
                 padding-top: 5px;
                 padding-bottom: 5px;
                 border-left: 1px solid $primary;
+                @include media-breakpoint-down(md) {
+                    border: none;
+                }
             }
             .table{
                 td{
@@ -525,6 +591,7 @@ body{
                 position: relative;
                 margin-top: 10px;
                 margin-bottom: 5px;
+                text-align: left;
                 &[aria-expanded="false"]{
                     &::after{
                         font-family: 'fontawesome';
@@ -547,6 +614,11 @@ body{
                         line-height: 0;
                         font-size: 1.5rem;
                         transition: all ease .3s;
+                    }
+                }
+                .moreTxt{
+                    @include media-breakpoint-down(md) {
+                        display: none;
                     }
                 }
             }
@@ -589,6 +661,11 @@ body{
         } // end add ------ < -------- <        
         .dashbord{
             position: relative;
+            &.desktop{
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
             .ttr{
                 position: relative;
                 .tt{
@@ -678,7 +755,135 @@ body{
                     }
                 } // end footerTable ------ < -------- <
             } // end table-responsive ------ < -------- <
-        }
+            &.mobile{
+                button{
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                }
+                .modal-dialog{
+                    top: calc(50% - 60px);
+                }
+                .modal-content{
+                    background: rgba(0, 0, 0, .9);
+                    .modal-body{
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        min-height: 150px;
+                        .form-control{
+                            margin-bottom: 25px;
+                            padding: 5px 0;
+                            background: transparent;
+                            border: none;
+                            border-bottom: 1px solid #FFF;
+                            color: #FFF;
+                            font-size: 1rem;
+                            font-weight: 400;
+                        }
+                        .btn{
+                            display: block;
+                            border: 1px solid #FFF;
+                            padding: 5px;
+                            width: 100px;
+                            margin-top: 10px;
+                        }
+                        .para{
+                            color: #FFF;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .bodyTable{
+                    padding: 0 5px;
+                    .item{
+                        justify-content: space-between;
+                        box-shadow: 0 0 10px #AAA;
+                        margin-top: 10px;
+                        padding: 5px 15px;
+                        border-radius: 15px;
+                        .lc{
+
+                        }
+                        .lc{
+                            display: flex;
+                            justify-content: flex-start;
+                            .nCom{
+                                .badge{
+                                    margin-right: 10px;
+                                }
+                            }
+                            .cc{
+                                .name{
+                                    font-weight: 700;
+                                    margin-bottom: 0;
+                                }
+                                .price{
+                                    font-size: 0.8rem;
+                                    margin-bottom: 0;
+                                }
+                                .para{
+                                    position: relative;
+                                    color: #b3b1b1;
+                                    margin-bottom: 0;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    width: 18px;
+                                    height: auto;
+                                    .small{
+                                        position: relative;
+                                        font-size: .9rem;
+                                        margin-right: 15px;
+                                    }
+                                }
+                                .date{
+                                    font-size: .8rem;
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                        }
+                        .rc{
+                            justify-content: space-around;
+                            align-items: flex-end;
+                            .starC{
+                                .fa-star{
+                                    color: $primary;
+                                    &.not{
+                                        color: #8c8b8b;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .footerTable{
+                    justify-content: center;
+                    border: none;
+                }
+                .rc{
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                }
+                .btn{
+                    padding-top: 1px;
+                    padding-bottom: 1px;
+                    font-size: 13px;
+                    &.btn-blue{
+                        background: #448ccb;
+                        color: #FFF;
+                        transition: all ease .3s;
+                        &:hover{
+                            background: #4d9de3;
+                        }
+                    }
+                }
+            }
+        } // end dashbord ------ < -------- <
         .listeContent{
             margin-top: 95px;
             margin-bottom: 95px;            
@@ -1478,6 +1683,9 @@ body{
                         height: 16px;
                     }
                 } // end custom-control-label ------ < -------- <
+                &.mobile{
+                    justify-content: flex-start;
+                }
                 .card{
                     text-align: center;
                     display: -webkit-box;
@@ -1502,6 +1710,9 @@ body{
                         }
                         @include media-breakpoint-down(md) {
                             margin-bottom: 15px;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            @include make-col(14 / 2);
                         }
                     .cardInner{
                         border: 1px solid $primary;
@@ -1545,9 +1756,15 @@ body{
                         .price{
                             font-weight: 500;
                             margin-bottom: 30px;
+                            @include media-breakpoint-down(md) {
+                                margin-bottom: 0;
+                            }
                         }
                         .para{
                             font-weight: 400;
+                            @include media-breakpoint-down(md) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -1705,11 +1922,17 @@ body{
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                @include media-breakpoint-down(md) {
+                    flex-direction: column;
+                }
                 .item{
                     padding: 10px;
                     .gridP{
                         border-radius: 15px;
                         overflow: hidden;
+                        @include media-breakpoint-down(md) {
+                            border-radius: 5px;
+                        }
                         img{
                             width: 100%;
                         }
@@ -1734,9 +1957,9 @@ body{
                 .form-control{
                     margin-bottom: 10px;
                 }
-                .btn{
-                    // text-transform: uppercase;
-                }
+                // .btn{
+                //     text-transform: uppercase;
+                // }
                 .other{
                     display: flex;
                     justify-content: space-around;
