@@ -79,6 +79,7 @@ body{
         left: 0;
         right: 0;
         border-bottom: 1px solid #3F3F3F;
+        z-index: 99;
         @include media-breakpoint-down(md) {
             display: none;
         }
@@ -352,6 +353,9 @@ body{
                 top: 161px;
                 padding-top: 30px;   
                     width: 260px;
+            }
+            & + .row{
+                margin-top: 50px;
             }
         }
         // .sticky-top-ie{
